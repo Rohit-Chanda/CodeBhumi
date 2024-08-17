@@ -1,4 +1,41 @@
 body{
     background-color:beige;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
+
+/* hero section */
+/* #myCarousel {
+        --bs-carousel-transition-duration: 0.3s;
+      } */
+.carousel-item {
+    height: 86vh;
+    min-height: 300px;
+    background: scroll;
+  }
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+  }
+  .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.685);
+    transition: background 0.5s;
+  }
+  .carousel-overlay.white {
+    background: rgba(255, 255, 255, 0.5);
+  }
