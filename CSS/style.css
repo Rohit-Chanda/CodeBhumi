@@ -39,3 +39,168 @@ body{
   .carousel-overlay.white {
     background: rgba(255, 255, 255, 0.5);
   }
+
+/* faculty section */
+.faculty {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px; /* Reduced padding for smaller screens */
+    background-color: #f8f8f8;
+  }
+  
+  .info {
+    flex: 1;
+    padding: 20px;
+    max-width: 100%; /* Ensure info section doesn't exceed container width */
+  }
+  
+  .info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #6c757d;
+    text-transform: uppercase;
+  }
+  
+  .info p {
+    margin-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6c757d;
+  }
+  
+  .info .btn {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+/* teacher div */
+/* .teacher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.styled-card{
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 20px;
+}
+.styled-card .styled-card-img img{
+    border-radius: 10px;
+    height: 300px;
+    width: 268px;
+} */
+.card {
+    display: flex;
+    /* display: inline-block; */
+    float: left;
+    width: 268px;
+    height: 337px;
+    margin: 15px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    /* box-shadow: 0 0 0 5px #ffffff80; */
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card img {
+    width: 100%; /* Ensure image takes full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing */
+    border-radius: 10px 10px 0 0; /* Round top corners */
+  }
+
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #00ffff;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+  }
+ /* Responsive Design */
+@media (max-width: 1200px) {
+    .card {
+      flex: 1 1 calc(50% - 30px); /* Two cards per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .faculty {
+      flex-direction: column; /* Stack info and teacher sections */
+      align-items: center;
+    }
+  
+    .info {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .card {
+      flex: 1 1 calc(100% - 30px); /* Full-width cards */
+      margin: 15px 0; /* Adjust margin for full-width cards */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .info h1 {
+      font-size: 1.2rem; /* Smaller font size */
+    }
+  
+    .info p {
+      font-size: 0.9rem; /* Smaller font size */
+    }
+  
+    .info .btn {
+      padding: 8px 16px; /* Smaller button padding */
+    }
+  
+    .card {
+      flex: 1 1 calc(100% - 30px); /* Full-width cards on very small screens */
+    }
+  }
