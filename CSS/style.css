@@ -152,6 +152,7 @@ body{
   background: #534bf3;
  }
   
+
   @media (max-width: 480px) {
     .info h1 {
       font-size: 1.2rem; /* Smaller font size */
