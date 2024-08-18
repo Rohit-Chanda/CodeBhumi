@@ -183,7 +183,7 @@ body{
   
     .card {
       flex: 1 1 calc(100% - 30px); /* Full-width cards */
-      margin: 15px 0; /* Adjust margin for full-width cards */
+      margin:  0px 15px; /* Adjust margin for full-width cards */
     }
   }
   
