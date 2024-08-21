@@ -39,134 +39,253 @@ body{
   .carousel-overlay.white {
     background: rgba(255, 255, 255, 0.5);
   }
-
 /* faculty section */
-.faculty {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px; /* Reduced padding for smaller screens */
-    background-color: #f8f8f8;
-  }
-  
-  .info {
-    flex: 1;
-    padding: 20px;
-    max-width: 100%; /* Ensure info section doesn't exceed container width */
-  }
-  
-  .info h1 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #6c757d;
-    text-transform: uppercase;
-  }
-  
-  .info p {
-    margin-bottom: 25px;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #6c757d;
-  }
-  
-  .info .btn {
-    padding: 10px 20px;
-    text-transform: uppercase;
-    border-radius: 5px;
-  }
-/* teacher div */
- .teacher {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*.styled-card{
-    background-color: whitesmoke;
-    padding: 10px;
-    margin: 0px 10px;
-    border-radius: 20px;
-}
-.styled-card .styled-card-img img{
-    border-radius: 10px;
-    height: 300px;
-    width: 268px;
-} */
-.card {
-  width: 268px;
-  height: 337px;
-  background: #a1a0a2;
-  border-radius: 15px;
-  box-shadow: 1px 5px 60px 0px #4040406b;
-  margin: 15px;
- }
- 
- .card .card-border-top {
-  width: 60%;
-  height: 3%;
-  background: #868687;
-  margin: auto;
-  border-radius: 0px 0px 15px 15px;
- }
- 
- .card span {
-  font-weight: 600;
-  color: white;
-  text-align: center;
-  display: block;
-  padding-top: 10px;
-  font-size: 16px;
- }
- 
- .card .job {
-  font-weight: 400;
-  color: white;
-  display: block;
-  text-align: center;
-  padding-top: 3px;
-  font-size: 12px;
- }
- 
- .card .img img{
-  width: 80px;
-  height: 100px;
-  /* background-image: url("./assets/pp.jpg"); */
-  border-radius: 50px;
-  margin-left: 90px;
-  margin-top: 25px;
- }
- 
- .card button {
-  padding: 8px 25px;
-  display: block;
-  margin: auto;
-  border-radius: 8px;
-  border: none;
-  margin-top: 30px;
-  background: #6b64f3;
-  color: white;
-  font-weight: 600;
- }
- 
- .card button:hover {
-  background: #534bf3;
- }
-  
+/* -------------------------------- 
 
-  @media (max-width: 480px) {
-    .info h1 {
-      font-size: 1.2rem; /* Smaller font size */
-    }
-  
-    .info p {
-      font-size: 0.9rem; /* Smaller font size */
-    }
-  
-    .info .btn {
-      padding: 8px 16px; /* Smaller button padding */
-    }
-  
-    .card {
-      flex: 1 1 calc(100% - 30px); /* Full-width cards on very small screens */
-    }
+File#: _2_team
+Title: Team
+Descr: A gallery of team members
+Usage: codyhouse.co/license
+
+-------------------------------- */
+/* reset */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  /* font-family: system-ui, sans-serif; */
+  /* color: hsl(230, 7%, 23%); */
+  /* font-size: 1rem; */
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  /* color: hsl(230, 13%, 9%); */
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.0736rem;
+}
+
+h2 {
+  font-size: 1.728rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+}
+
+a {
+  color: hsl(250, 84%, 54%);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, video, svg {
+  border-radius: 20px;
+  display: block;
+  max-width: 100%;
+}
+
+@media (min-width: 64rem) {
+  body {
+    font-size: 1.25rem;
   }
+
+  h1 {
+    font-size: 3.051rem;
+  }
+
+    h2 {
+    font-size: 2.44rem;
+  }
+
+    h3 {
+    font-size: 1.75rem;
+  }
+
+    h4 {
+    font-size: 1.5625rem;
+  }
+}
+
+/* variables */
+:root {
+  /* colors */
+  --ty9-color-primary-hsl: 250, 84%, 54%;
+  --ty9-color-bg-hsl: 0, 0%, 100%;
+  --ty9-color-contrast-high-hsl: 230, 7%, 23%;
+  --ty9-color-contrast-higher-hsl: 230, 13%, 9%;
+
+  /* spacing */
+  --ty9-space-3xs: 0.25rem;
+  --ty9-space-sm: 0.75rem;
+  --ty9-space-md: 1.25rem;
+  --ty9-space-lg: 2rem;
+  --ty9-space-xl: 3.25rem;
+
+  /* typography */
+  --ty9-text-md: 1.2rem;
+  --ty9-text-base: 1rem;
+  --ty9-text-sm: 0.833rem;
+}
+
+@media(min-width: 64rem){
+  :root {
+    /* spacing */
+    --ty9-space-3xs: 0.375rem;
+    --ty9-space-sm: 1.125rem;
+    --ty9-space-md: 2rem;
+    --ty9-space-lg: 3.125rem;
+    --ty9-space-xl: 5.125rem;
+
+    /* typography */
+    --ty9-text-md: 1.5625rem;
+    --ty9-text-base: 1.25rem;
+    --ty9-text-sm: 1rem;
+  }
+}
+
+/* component */
+.team {
+  position: relative;
+  z-index: 1;
+}
+
+/* utility classes */
+.ty9-opacity-70\% {
+  opacity: 0.7;
+}
+
+.ty9-text-sm {
+  font-size: var(--ty9-text-sm);
+}
+
+.ty9-margin-top-3xs {
+  margin-top: var(--ty9-space-3xs);
+}
+
+.ty9-text-md {
+  font-size: var(--ty9-text-md);
+}
+
+.ty9-text-center {
+  text-align: center;
+}
+
+.ty9-padding-sm {
+  padding: var(--ty9-space-sm);
+}
+
+.ty9-radius-md {
+  border-radius: 0.25em;
+}
+
+.ty9-gap-sm {
+  gap: var(--ty9-space-sm);
+}
+
+.ty9-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.ty9-grid > * {
+  min-width: 0;
+  grid-column-end: span 12;
+}
+
+.ty9-margin-bottom-lg {
+  margin-bottom: var(--ty9-space-lg);
+}
+
+.ty9-max-width-adaptive-lg {
+  max-width: 32rem;
+}
+
+@media(min-width: 48rem) {
+  .ty9-max-width-adaptive-lg {
+    max-width: 48rem;
+  }
+}
+
+@media(min-width: 64rem) {
+  .ty9-max-width-adaptive-lg {
+    max-width: 64rem;
+  }
+}
+
+@media(min-width: 80rem) {
+  .ty9-max-width-adaptive-lg {
+    max-width: 80rem;
+  }
+}
+
+.ty9-container {
+  width: calc(100% - 2*var(--ty9-space-md));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ty9-padding-y-xl {
+  padding-top: var(--ty9-space-xl);
+  padding-bottom: var(--ty9-space-xl);
+}
+
+.ty9-padding-bottom-sm {
+  padding-bottom: var(--ty9-space-sm);
+}
+
+.ty9-padding-top-md {
+  padding-top: var(--ty9-space-md);
+}
+
+.ty9-padding-x-sm {
+  padding-left: var(--ty9-space-sm);
+  padding-right: var(--ty9-space-sm);
+}
+
+@media(min-width: 64rem){
+  .ty9-text-base\@md {
+    font-size: var(--ty9-text-base);
+  }
+
+  .ty9-col-3\@md {
+    grid-column-end: span 3;
+  }
+}
