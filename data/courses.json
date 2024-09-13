@@ -1,0 +1,46 @@
+{
+  "courses": [
+    {
+      "id": "course1",
+      "title": "UI/Web & Graphic Design for Teenagers 11-17 Years Old",
+      "description": "Dive into the exciting world of design with our specialized course for teenagers! This engaging program introduces young minds to the fundamentals of UI, web, and graphic design, helping them harness their creativity and build practical skills with modern design tools.",
+      "startDate": "January 10, 2024",
+      "duration": "8 weeks",
+      "details": {
+        "courseOverview": "Our course is designed to provide a comprehensive introduction to design principles and practical skills. Students will work on hands-on projects, learning how to create visually appealing and user-friendly designs.",
+        "whatYouWillLearn": [
+          "1. Basics of UI/UX design",
+          "2. Introduction to graphic design principles",
+          "3. How to use popular design tools like Adobe XD and Figma",
+          "4. Creating and managing web layouts",
+          "5. Designing eye-catching graphics and user interfaces"
+        ],
+        "targetAudience": "This course is perfect for teenagers aged 11-17 who are passionate about design and looking to explore their creativity in a structured environment.",
+        "whyJoin": "Join us to unlock your creative potential and gain skills that are highly valuable in today's digital world. Whether you’re interested in pursuing a career in design or just want to learn a new hobby, this course is the perfect start!"
+      },
+      "faq": [
+        {
+          "question": "What are the prerequisites for this course?",
+          "answer": "No prior design experience is required. All you need is a passion for creativity and a willingness to learn."
+        },
+        {
+          "question": "What tools will I need for this course?",
+          "answer": "You will need a computer with internet access. We will be using free design tools like Adobe XD and Figma, which will be introduced during the course."
+        },
+        {
+          "question": "How much time should I commit to this course each week?",
+          "answer": "We recommend dedicating around 3-4 hours per week to complete the course materials and assignments."
+        },
+        {
+          "question": "Will there be any projects or assignments?",
+          "answer": "Yes, the course includes hands-on projects and assignments to help you apply what you’ve learned and build a portfolio."
+        },
+        {
+          "question": "How can I contact the instructor if I have questions?",
+          "answer": "You can reach out to the instructor via email or through our course platform’s messaging system."
+        }
+      ],
+      "enrollLink": "/enroll"
+    }
+  ]
+}
