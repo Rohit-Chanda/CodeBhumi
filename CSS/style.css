@@ -1,5 +1,5 @@
 body {
-  background-color: beige;
+  background-color: rgb(233, 233, 233);
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -54,205 +54,135 @@ Usage: codyhouse.co/license
 
 -------------------------------- */
 /* General styles */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
+/* Center the entire team section */
+.team {
+  text-align: center;
+  padding: 40px 0;
+  max-width: 1142px;
+  margin: 0 auto;
 }
 
-* {
-  font: inherit;
-  margin: 0;
-  padding: 0;
-  border: 0;
+.team h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-align: center; /* Ensure the heading is centered */
 }
 
-body {
-  background-color: hsl(0, 0%, 100%);
+.team p {
+  margin-bottom: 40px;
+  color: #555;
+  font-size: 1.125rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.2;
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 2.0736rem;
-}
-
-h2 {
-  font-size: 1.728rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-}
-
-ol,
-ul,
-menu {
-  list-style: none;
-}
-
-button,
-input,
-textarea,
-select {
-  background-color: transparent;
-  border-radius: 0;
-  color: inherit;
-  line-height: inherit;
-  appearance: none;
-}
-
-textarea {
-  resize: vertical;
-  overflow: auto;
-  vertical-align: top;
-}
-
-a {
-  color: hsl(250, 84%, 54%);
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.team img,
-video,
-svg {
-  border-radius: 20px;
-  display: block;
-  max-width: 100%;
-}
-
-/* Grid setup for the card layout */
-.ty9-grid {
+/* Grid layout for the team cards */
+.team-img {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  /* Default to 1 card */
-  gap: 10px;
-  /* 10px gap between cards */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-items: center; /* Center the items within each grid cell */
   padding: 0 10px;
-  /* Add 10px margin on left and right */
+  max-width: 1142px; /* Align with other sections */
+  margin: 0 auto; /* Center the grid within the section */
 }
 
-/* Breakpoints for card layout */
-@media (min-width: 500px) and (max-width: 768px) {
-  .ty9-grid {
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 cards for 500px - 768px */
+/* Responsive grid breakpoints */
+@media (min-width: 500px) {
+  .team-img {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 cards on mid-sized screens */
   }
 }
 
-@media (min-width: 768px) and (max-width: 1025px) {
-  .ty9-grid {
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 cards for 768px - 1025px */
+@media (min-width: 768px) {
+  .team-img {
+    grid-template-columns: repeat(3, 1fr); /* Show 3 cards on larger screens */
   }
 }
 
-@media (min-width: 1025px) {
-  .ty9-grid {
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 cards for greater than 1025px */
+@media (min-width: 1024px) {
+  .team-img {
+    grid-template-columns: repeat(4, 1fr); /* Show 4 cards on larger desktops */
   }
 }
 
-/* Adjust card size under 500px */
-@media (max-width: 500px) {
-  .ty9-grid {
-    grid-template-columns: repeat(1, minmax(0, 80%));
-    /* Cards take up 80% of width */
-    justify-content: center;
-    /* Center the cards */
-  }
+/* Styling for each team member card */
+.card-v2 {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  max-width: 300px; /* Restrict max size for larger screens */
 }
 
-/* Other utility classes */
-.ty9-opacity-70\% {
-  opacity: 0.7;
+.card-v2:hover {
+  transform: translateY(-10px);
 }
 
-.ty9-text-sm {
-  font-size: var(--ty9-text-sm);
+.card-v2 img {
+  border-radius: 50%; /* Make images round */
+  width: 150px; /* Fixed size for images */
+  height: 150px;
+  object-fit: cover; /* Ensure the image is contained well */
+  margin: 20px auto;
 }
 
-.ty9-margin-top-3xs {
-  margin-top: var(--ty9-space-3xs);
+.card-v2__caption {
+  padding: 15px;
 }
 
 .ty9-text-md {
-  font-size: var(--ty9-text-md);
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
-.ty9-text-center {
-  text-align: center;
+.ty9-opacity-70\% {
+  font-size: 1rem;
+  color: #777;
+  margin-top: 5px;
 }
 
-.ty9-padding-sm {
-  padding: var(--ty9-space-sm);
-}
-
-.ty9-radius-md {
-  border-radius: 0.25em;
-}
-
-.ty9-margin-bottom-lg {
-  margin-bottom: var(--ty9-space-lg);
-}
-
+/* Container for consistency */
 .ty9-container {
-  width: calc(100% - 2*var(--ty9-space-md));
+  max-width: 1142px; /* Ensure consistency with other sections */
   margin-left: auto;
   margin-right: auto;
 }
 
 .ty9-padding-y-xl {
-  padding-top: var(--ty9-space-xl);
-  padding-bottom: var(--ty9-space-xl);
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.ty9-padding-bottom-sm {
-  padding-bottom: var(--ty9-space-sm);
+
+/* features */
+.feature-container{
+  padding: 30px;
+}
+.feature-container .features h1{
+  text-align: center;
+  padding: 10px;
 }
 
-.ty9-padding-top-md {
-  padding-top: var(--ty9-space-md);
-}
 
-.ty9-padding-x-sm {
-  padding-left: var(--ty9-space-sm);
-  padding-right: var(--ty9-space-sm);
-}
 
-/* Responsive typography */
-@media(min-width: 64rem) {
-  h1 {
-    font-size: 3.051rem;
-  }
 
-  h2 {
-    font-size: 2.44rem;
-  }
 
-  h3 {
-    font-size: 1.75rem;
-  }
 
-  h4 {
-    font-size: 1.5625rem;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
 
 /*courses Section*/
 

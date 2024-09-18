@@ -1,9 +1,8 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import { existsSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import xlsx from 'xlsx';
+import axios from 'axios';
 
 const app = express();
 const port = 3000; // Or any port you prefer
@@ -12,7 +11,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(bodyParser.urlencoded({ extended: true }));
-
 app.use(express.static(__dirname));
 
 // Serve your HTML files
@@ -20,27 +18,32 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.post('/submit-enrollment', (req, res) => {
+// POST route for enrollment form
+app.post('/submit-enrollment', async (req, res) => {
     const { name, address, contactNumber, email, courseName } = req.body;
 
-    const filePath = './enrollments.xlsx';
-    let workbook;
+    // Pabbly Webhook URL
+    const webhookUrl = 'https://connect.pabbly.com/workflow/sendwebhookdata/IjU3NjYwNTZkMDYzMjA0MzE1MjY5NTUzZDUxMzYi_pc';
 
-    if (existsSync(filePath)) {
-        workbook = xlsx.readFile(filePath);
-    } else {
-        workbook = xlsx.utils.book_new();
-        const worksheet = xlsx.utils.aoa_to_sheet([['Name', 'Address', 'Contact Number', 'Email', 'Course Name', 'Enrollment Date']]);
-        xlsx.utils.book_append_sheet(workbook, worksheet, 'Enrollments');
+    const enrollmentData = {
+        name,
+        address,
+        contactNumber,
+        email,
+        courseName,
+        enrollmentDate: new Date().toLocaleString(),
+    };
+
+    try {
+        // Send form data to Pabbly webhook
+        await axios.post(webhookUrl, enrollmentData);
+
+        // Redirect user to thank you page after form submission
+        res.redirect(`/thank-you.html?email=${encodeURIComponent(email)}&courseName=${encodeURIComponent(courseName)}`);
+    } catch (error) {
+        console.error('Error sending data to Pabbly:', error);
+        res.status(500).send('An error occurred while submitting the enrollment.');
     }
-
-    const worksheet = workbook.Sheets[workbook.SheetNames[0]];
-    const newData = [[name, address, contactNumber, email, courseName, new Date().toLocaleString()]];
-    xlsx.utils.sheet_add_aoa(worksheet, newData, { origin: -1 });
-
-    xlsx.writeFile(workbook, filePath);
-
-    res.redirect(`/thank-you.html?email=${encodeURIComponent(email)}&courseName=${encodeURIComponent(courseName)}`);
 });
 
 app.listen(port, () => {
