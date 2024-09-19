@@ -2,45 +2,188 @@
   "courses": [
     {
       "id": "course1",
-      "title": "UI/Web & Graphic Design for Teenagers 11-17 Years Old",
-      "description": "Dive into the exciting world of design with our specialized course for teenagers! This engaging program introduces young minds to the fundamentals of UI, web, and graphic design, helping them harness their creativity and build practical skills with modern design tools.",
-      "startDate": "January 10, 2024",
-      "duration": "8 weeks",
+      "title": "Mastering Java Programming",
+      "description": "Unlock the power of Java with this comprehensive course! Whether you're a beginner or looking to level up your skills, this program covers everything from the basics to advanced Java concepts, helping you build robust applications.",
+      "startDate": "October 5, 2024",
+      "duration": "10 weeks",
       "details": {
-        "courseOverview": "Our course is designed to provide a comprehensive introduction to design principles and practical skills. Students will work on hands-on projects, learning how to create visually appealing and user-friendly designs.",
+        "courseOverview": "This course offers a deep dive into Java programming, focusing on both object-oriented programming principles and practical applications. With hands-on projects, you'll learn how to build scalable and efficient software.",
         "whatYouWillLearn": [
-          "1. Basics of UI/UX design",
-          "2. Introduction to graphic design principles",
-          "3. How to use popular design tools like Adobe XD and Figma",
-          "4. Creating and managing web layouts",
-          "5. Designing eye-catching graphics and user interfaces"
+          "1. Java syntax and programming fundamentals",
+          "2. Object-oriented programming concepts",
+          "3. Data structures and algorithms in Java",
+          "4. Multithreading and concurrency",
+          "5. Building real-world applications"
         ],
-        "targetAudience": "This course is perfect for teenagers aged 11-17 who are passionate about design and looking to explore their creativity in a structured environment.",
-        "whyJoin": "Join us to unlock your creative potential and gain skills that are highly valuable in today's digital world. Whether you’re interested in pursuing a career in design or just want to learn a new hobby, this course is the perfect start!"
+        "targetAudience": "Ideal for beginners or intermediate programmers who want to build a strong foundation in Java for web development, Android applications, or enterprise solutions.",
+        "whyJoin": "Join this course to master one of the most popular programming languages in the world and become a skilled developer capable of building robust applications across various platforms."
       },
       "faq": [
         {
           "question": "What are the prerequisites for this course?",
-          "answer": "No prior design experience is required. All you need is a passion for creativity and a willingness to learn."
+          "answer": "Basic knowledge of programming is helpful but not required."
         },
         {
-          "question": "What tools will I need for this course?",
-          "answer": "You will need a computer with internet access. We will be using free design tools like Adobe XD and Figma, which will be introduced during the course."
+          "question": "How much time should I commit per week?",
+          "answer": "Expect to spend around 4-5 hours per week on lessons and assignments."
         },
         {
-          "question": "How much time should I commit to this course each week?",
-          "answer": "We recommend dedicating around 3-4 hours per week to complete the course materials and assignments."
+          "question": "Will I build projects?",
+          "answer": "Yes, you will work on projects that demonstrate your Java skills."
+        }
+      ],
+      "enrollLink": "/enroll"
+    },
+    {
+      "id": "course2",
+      "title": "C++ Programming for High Performance",
+      "description": "Dive into C++ and unlock the potential of one of the most powerful programming languages! Learn how to create efficient, high-performance applications using C++ in this step-by-step course.",
+      "startDate": "November 12, 2024",
+      "duration": "12 weeks",
+      "details": {
+        "courseOverview": "This course provides a comprehensive introduction to C++ programming. Through hands-on coding exercises, you'll explore how C++ powers performance-critical applications like games and operating systems.",
+        "whatYouWillLearn": [
+          "1. C++ syntax and data types",
+          "2. Object-oriented programming in C++",
+          "3. Memory management and pointers",
+          "4. Advanced data structures and algorithms",
+          "5. Multithreading and parallel programming"
+        ],
+        "targetAudience": "Perfect for developers looking to build performance-critical applications in industries like gaming, AI, or systems programming.",
+        "whyJoin": "Learn C++ to build fast, powerful, and memory-efficient applications that push the boundaries of technology."
+      },
+      "faq": [
+        {
+          "question": "What are the prerequisites?",
+          "answer": "Prior programming experience is recommended, especially in languages like C or Java."
         },
         {
-          "question": "Will there be any projects or assignments?",
-          "answer": "Yes, the course includes hands-on projects and assignments to help you apply what you’ve learned and build a portfolio."
+          "question": "How much time should I commit?",
+          "answer": "Plan for 5-6 hours per week for coursework and assignments."
+        }
+      ],
+      "enrollLink": "/enroll"
+    },
+    {
+      "id": "course3",
+      "title": "HTML & CSS for Web Development",
+      "description": "Create stunning websites by mastering HTML and CSS! This course is designed to teach you the fundamentals of web development, focusing on building responsive and visually appealing web pages.",
+      "startDate": "October 25, 2024",
+      "duration": "6 weeks",
+      "details": {
+        "courseOverview": "Explore the basics of front-end web development with HTML and CSS. By the end of the course, you'll be able to design and style websites from scratch, following modern web standards.",
+        "whatYouWillLearn": [
+          "1. HTML structure and semantics",
+          "2. Styling with CSS",
+          "3. Responsive design principles",
+          "4. Flexbox and CSS Grid",
+          "5. Debugging and optimizing web pages"
+        ],
+        "targetAudience": "Ideal for beginners who want to break into web development and start building their own websites or blogs.",
+        "whyJoin": "By mastering HTML and CSS, you'll gain the foundational skills needed to create professional-grade websites, an essential step for any web developer."
+      },
+      "faq": [
+        {
+          "question": "Are there any prerequisites?",
+          "answer": "No, this course is beginner-friendly."
         },
         {
-          "question": "How can I contact the instructor if I have questions?",
-          "answer": "You can reach out to the instructor via email or through our course platform’s messaging system."
+          "question": "How much time should I allocate weekly?",
+          "answer": "Around 3-4 hours per week should be sufficient."
+        }
+      ],
+      "enrollLink": "/enroll"
+    },
+    {
+      "id": "course4",
+      "title": "C Programming for Beginners",
+      "description": "Learn the fundamentals of programming with C, one of the most powerful and widely-used programming languages. This course covers everything from basic syntax to complex data structures, making it perfect for aspiring developers.",
+      "startDate": "September 30, 2024",
+      "duration": "8 weeks",
+      "details": {
+        "courseOverview": "This course introduces you to the C programming language, focusing on core programming principles and techniques. You’ll work on projects that teach you how to write efficient, error-free programs.",
+        "whatYouWillLearn": [
+          "1. C syntax and programming constructs",
+          "2. Control structures and functions",
+          "3. Pointers and memory management",
+          "4. File handling in C",
+          "5. Data structures using C"
+        ],
+        "targetAudience": "Great for beginners interested in learning the foundation of software development and systems programming.",
+        "whyJoin": "Learning C provides a strong foundation for understanding other programming languages and is essential for those interested in low-level programming or embedded systems."
+      },
+      "faq": [
+        {
+          "question": "Is prior programming experience required?",
+          "answer": "No, this course is designed for beginners."
+        },
+        {
+          "question": "How much time should I commit?",
+          "answer": "Expect to spend around 4-5 hours per week on this course."
+        }
+      ],
+      "enrollLink": "/enroll"
+    },
+    {
+      "id": "course5",
+      "title": "Python Programming from Scratch",
+      "description": "Start your coding journey with Python, one of the most beginner-friendly and versatile programming languages. Learn the basics and build real-world applications in this hands-on course.",
+      "startDate": "October 15, 2024",
+      "duration": "9 weeks",
+      "details": {
+        "courseOverview": "This course covers everything from Python’s syntax to advanced data handling techniques. You will develop practical skills through coding projects and real-world scenarios.",
+        "whatYouWillLearn": [
+          "1. Python syntax and basics",
+          "2. Data structures and algorithms",
+          "3. Working with libraries and APIs",
+          "4. File handling and automation",
+          "5. Building small applications"
+        ],
+        "targetAudience": "Perfect for anyone looking to start their programming journey, especially beginners or those switching to Python from another language.",
+        "whyJoin": "Python is one of the most in-demand programming languages, known for its simplicity and wide range of applications, from web development to AI."
+      },
+      "faq": [
+        {
+          "question": "Are there any prerequisites?",
+          "answer": "No, this course is beginner-friendly."
+        },
+        {
+          "question": "How much time should I dedicate?",
+          "answer": "Plan for 4-5 hours per week."
+        }
+      ],
+      "enrollLink": "/enroll"
+    },
+    {
+      "id": "course6",
+      "title": "Data Structures & Algorithms Bootcamp",
+      "description": "Master data structures and algorithms in this rigorous bootcamp! Gain the knowledge you need to excel in technical interviews and solve complex programming challenges.",
+      "startDate": "November 1, 2024",
+      "duration": "10 weeks",
+      "details": {
+        "courseOverview": "This course is designed to build a strong understanding of data structures and algorithms, which are critical for solving coding challenges. You’ll work through coding problems and real-world scenarios to develop your problem-solving skills.",
+        "whatYouWillLearn": [
+          "1. Arrays, linked lists, and trees",
+          "2. Sorting and searching algorithms",
+          "3. Dynamic programming",
+          "4. Graph algorithms",
+          "5. Time and space complexity analysis"
+        ],
+        "targetAudience": "This course is aimed at developers looking to strengthen their knowledge of algorithms and data structures for career advancement or technical interviews.",
+        "whyJoin": "Developing a solid understanding of data structures and algorithms will help you excel in coding interviews and solve real-world problems more efficiently."
+      },
+      "faq": [
+        {
+          "question": "What are the prerequisites?",
+          "answer": "Basic programming knowledge is required."
+        },
+        {
+          "question": "How much time should I commit weekly?",
+          "answer": "Plan for 5-6 hours per week."
         }
       ],
       "enrollLink": "/enroll"
     }
+    
   ]
 }
