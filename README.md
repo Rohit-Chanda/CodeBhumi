@@ -1,10 +1,10 @@
-# Welcome to **Coding Bhumi** 🌐
+# Welcome to **Code Bhumi** 🌐
 
-**Coding Bhumi** is your ultimate destination for learning the most in-demand skills of the digital age! Our platform offers a wide range of courses designed to help students, professionals, and enthusiasts excel in coding, web development, data science, artificial intelligence, and more.
+**Code Bhumi** is your ultimate destination for learning the most in-demand skills of the digital age! Our platform offers a wide range of courses designed to help students, professionals, and enthusiasts excel in coding, web development, data science, artificial intelligence, and more.
 
-## 🚀 **Why Coding Bhumi?**
+## 🚀 **Why Code Bhumi?**
 
-At Coding Bhumi, we believe that **anyone can code**, and we’re here to make that journey exciting, accessible, and engaging. Whether you’re a complete beginner or looking to upgrade your skill set, our carefully crafted courses are designed to cater to learners of all levels.
+At Code Bhumi, we believe that **anyone can code**, and we’re here to make that journey exciting, accessible, and engaging. Whether you’re a complete beginner or looking to upgrade your skill set, our carefully crafted courses are designed to cater to learners of all levels.
 
 ### **What We Offer:**
 - **Expert-Led Courses**: Learn from industry professionals and experienced educators who are passionate about teaching.
@@ -35,8 +35,8 @@ From foundational programming languages to cutting-edge technologies, Coding Bhu
 We are constantly expanding our course library! Keep an eye out for upcoming courses on **Machine Learning**, **Natural Language Processing (NLP)**, **Deep Learning**, and **Big Data**.
 
 ## 💡 **Get Started Today!**
-Visit [Coding Bhumi](https://codingbhumi.com) and kickstart your coding journey today! Whether you're a student aiming to sharpen your skills or a professional looking to stay ahead in your career, Coding Bhumi is here to guide you every step of the way.
+Visit [Code Bhumi](https://codingbhumi.com) and kickstart your coding journey today! Whether you're a student aiming to sharpen your skills or a professional looking to stay ahead in your career, Coding Bhumi is here to guide you every step of the way.
 
 ---
 
-**Coding Bhumi: Where Learning Meets Innovation.** Let's build the future together, one line of code at a time! 💻🌱
+**Code Bhumi: Where Learning Meets Innovation.** Let's build the future together, one line of code at a time! 💻🌱
