@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(248, 244, 244);
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -443,9 +443,19 @@ p {
   color: #0088cc;
 }
 
+/* cpntact */
+.contact{
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
 /* footer */
 /* Footer styles */
 .footer {
   background-color: rgba(255, 228, 196, 0.666);
   width: 100%;
+}
+
+footer .row .footer-link{
+  margin: 75px 0px 0px 75px;
 }
