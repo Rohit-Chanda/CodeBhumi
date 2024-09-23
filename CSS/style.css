@@ -45,16 +45,7 @@ body {
 }
 
 /* faculty section */
-/* -------------------------------- 
 
-File#: _2_team
-Title: Team
-Descr: A gallery of team members
-Usage: codyhouse.co/license
-
--------------------------------- */
-/* General styles */
-/* Center the entire team section */
 .team {
   text-align: center;
   padding: 40px 0;
@@ -371,7 +362,7 @@ header {
 
 /* course1 */
 .course1 {
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   font-size: medium;
 }
 

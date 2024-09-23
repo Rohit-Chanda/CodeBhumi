@@ -4,8 +4,8 @@
       "id": "course1",
       "title": "Mastering Java Programming",
       "description": "Unlock the power of Java with this comprehensive course! Whether you're a beginner or looking to level up your skills, this program covers everything from the basics to advanced Java concepts, helping you build robust applications.",
-      "startDate": "October 5, 2024",
-      "duration": "10 weeks",
+      "startDate": "October 22, 2024 (07:00 pm)",
+      "duration": "---",
       "details": {
         "courseOverview": "This course offers a deep dive into Java programming, focusing on both object-oriented programming principles and practical applications. With hands-on projects, you'll learn how to build scalable and efficient software.",
         "whatYouWillLearn": [
@@ -24,10 +24,6 @@
           "answer": "Basic knowledge of programming is helpful but not required."
         },
         {
-          "question": "How much time should I commit per week?",
-          "answer": "Expect to spend around 4-5 hours per week on lessons and assignments."
-        },
-        {
           "question": "Will I build projects?",
           "answer": "Yes, you will work on projects that demonstrate your Java skills."
         }
@@ -38,8 +34,8 @@
       "id": "course2",
       "title": "C++ Programming for High Performance",
       "description": "Dive into C++ and unlock the potential of one of the most powerful programming languages! Learn how to create efficient, high-performance applications using C++ in this step-by-step course.",
-      "startDate": "November 12, 2024",
-      "duration": "12 weeks",
+      "startDate": "October 21, 2024 (07:00 pm)",
+      "duration": "---",
       "details": {
         "courseOverview": "This course provides a comprehensive introduction to C++ programming. Through hands-on coding exercises, you'll explore how C++ powers performance-critical applications like games and operating systems.",
         "whatYouWillLearn": [
@@ -56,10 +52,6 @@
         {
           "question": "What are the prerequisites?",
           "answer": "Prior programming experience is recommended, especially in languages like C or Java."
-        },
-        {
-          "question": "How much time should I commit?",
-          "answer": "Plan for 5-6 hours per week for coursework and assignments."
         }
       ],
       "enrollLink": "/enroll"
@@ -68,8 +60,8 @@
       "id": "course3",
       "title": "HTML & CSS for Web Development",
       "description": "Create stunning websites by mastering HTML and CSS! This course is designed to teach you the fundamentals of web development, focusing on building responsive and visually appealing web pages.",
-      "startDate": "October 25, 2024",
-      "duration": "6 weeks",
+      "startDate": "October 25, 2024 (07:00 pm)",
+      "duration": "---",
       "details": {
         "courseOverview": "Explore the basics of front-end web development with HTML and CSS. By the end of the course, you'll be able to design and style websites from scratch, following modern web standards.",
         "whatYouWillLearn": [
@@ -98,8 +90,8 @@
       "id": "course4",
       "title": "C Programming for Beginners",
       "description": "Learn the fundamentals of programming with C, one of the most powerful and widely-used programming languages. This course covers everything from basic syntax to complex data structures, making it perfect for aspiring developers.",
-      "startDate": "September 30, 2024",
-      "duration": "8 weeks",
+      "startDate": "October 20, 2024 (12:00 pm)",
+      "duration": "---",
       "details": {
         "courseOverview": "This course introduces you to the C programming language, focusing on core programming principles and techniques. You’ll work on projects that teach you how to write efficient, error-free programs.",
         "whatYouWillLearn": [
@@ -128,8 +120,8 @@
       "id": "course5",
       "title": "Python Programming from Scratch",
       "description": "Start your coding journey with Python, one of the most beginner-friendly and versatile programming languages. Learn the basics and build real-world applications in this hands-on course.",
-      "startDate": "October 15, 2024",
-      "duration": "9 weeks",
+      "startDate": "October 19, 2024 (8:30 am)",
+      "duration": "---",
       "details": {
         "courseOverview": "This course covers everything from Python’s syntax to advanced data handling techniques. You will develop practical skills through coding projects and real-world scenarios.",
         "whatYouWillLearn": [
@@ -158,8 +150,8 @@
       "id": "course6",
       "title": "Data Structures & Algorithms Bootcamp",
       "description": "Master data structures and algorithms in this rigorous bootcamp! Gain the knowledge you need to excel in technical interviews and solve complex programming challenges.",
-      "startDate": "November 1, 2024",
-      "duration": "10 weeks",
+      "startDate": "October 19, 2024 (11:00 am)",
+      "duration": "---",
       "details": {
         "courseOverview": "This course is designed to build a strong understanding of data structures and algorithms, which are critical for solving coding challenges. You’ll work through coding problems and real-world scenarios to develop your problem-solving skills.",
         "whatYouWillLearn": [
