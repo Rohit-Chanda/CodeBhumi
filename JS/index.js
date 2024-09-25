@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
           course.description;
         document.getElementById("course-start-date").innerText =
           course.startDate;
-        document.getElementById("course-duration").innerText = course.duration;
+        document.getElementById("course-fees").innerText = course.fees;
         // Display course overview
         document.getElementById("course-overview").innerText =
           course.details.courseOverview;
