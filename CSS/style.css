@@ -452,7 +452,7 @@ footer .row .footer-link{
 }
 
 /*subscription form*/
-.zf_lB_Dimmer_686149{ 
+.zf_lB_Dimmer_169968{ 
   position: fixed;
   top: 0px;
   left: 0px;
@@ -463,7 +463,7 @@ footer .row .footer-link{
   z-index: 10000000;
 }
 
-.zf_lB_Container_686149{
+.zf_lB_Container_169968{
 position: fixed;
 background-color: white;
 margin: 0;
@@ -484,7 +484,7 @@ p{
 margin-bottom: 10px;
 }
 
-.zf_lB_Wrapper_686149{
+.zf_lB_Wrapper_169968{
 position: fixed;
   top: 50%;
   left: 50%;
@@ -493,14 +493,14 @@ position: fixed;
   z-index: 10000001;
 }
 
-.zf_main_id_686149{
+.zf_main_id_169968{
 height: calc(100% - 0px);
 display: flex;
 overflow-y: auto;
 overflow-x: hidden;
 }
 
-.zf_lb_closeform_686149 {
+.zf_lb_closeform_169968 {
   position: absolute;
   right: -20px;
   background: #2f2e2e;
@@ -512,7 +512,7 @@ overflow-x: hidden;
   cursor: pointer;
   border: 2px solid #d9d9d9;
 }
-.zf_lb_closeform_686149:before, .zf_lb_closeform_686149:after {
+.zf_lb_closeform_169968:before, .zf_lb_closeform_169968:after {
   position: absolute;
   left: 16px;
   content: ' ';
@@ -522,10 +522,10 @@ overflow-x: hidden;
   background-color: #f7f7f7;
 }
 
-.zf_lb_closeform_686149:before {
+.zf_lb_closeform_169968:before {
 transform: rotate(45deg);
 }
-.zf_lb_closeform_686149:after {
+.zf_lb_closeform_169968:after {
 transform: rotate(-45deg);
 } 
 
@@ -549,43 +549,43 @@ display: block !important;
 
 
 @media screen and (min-device-width: 10px) and (max-device-width: 380px) {  
- .zf_lB_Container_686149 {
+ .zf_lB_Container_169968 {
 width: 270px !important;
 } 
 }
 
 @media screen and (min-device-width: 360px) and (max-device-width: 480px) {  
- .zf_lB_Container_686149 {
+ .zf_lB_Container_169968 {
 width: 350px !important;
 } 
 }
 
 @media screen and (min-device-width: 440px) and (max-device-width: 500px) {  
- .zf_lB_Container_686149 {
+ .zf_lB_Container_169968 {
 width: 380px !important;
 } 
 }
 
 @media only screen  and (min-width:500px) and (max-width:600px)  {  
- .zf_lB_Container_686149 {
+ .zf_lB_Container_169968 {
 width: 450px;
 }
 }
 
 @media only screen  and (min-width:601px) and (max-width:700px)  {  
- .zf_lB_Container_686149 {
+ .zf_lB_Container_169968 {
 width: 540px;
 }
 }
 
 @media only screen  and (min-width:700px) and (max-width:800px)  { 
-.zf_lB_Container_686149 {
+.zf_lB_Container_169968 {
 width: 650px;
 }
 }
 
 @media screen and (min-device-width: 801px) and (max-device-width: 1268px) {  
- .zf_lB_Container_686149 {
+ .zf_lB_Container_169968 {
 width: 750px !important;
 } 
 }

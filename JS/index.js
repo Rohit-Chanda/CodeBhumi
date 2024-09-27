@@ -102,168 +102,171 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //subscripition form
 (function() {
-    try {
-        // Function to check if the user is on the home page
-        function isHomePage() {
-            return window.location.pathname === "/" || window.location.pathname === "/index.html";
-        }
+	try{
 
-        // Check if the document is fully loaded
-        if (document.readyState == "complete") {
-            onloadActions_686149();
-        } else {
-            window.addEventListener("load", function() {
-                onloadActions_686149();
-            }, false);
-        }
+			if( document.readyState == "complete" ){ 
+				onloadActions_169968();
+			}  else {
+			  	window.addEventListener('load', function (){
+			  		onloadActions_169968();
+			  	}, false);
+			}
 
-        // Main function that triggers when the page is loaded
-        function onloadActions_686149() {
-            if (isHomePage()) {  // Only show the form if it's the home page
-                constructDiv_686149();
-                // Delay the popup by 10 seconds (10000 milliseconds)
-                setTimeout(function() {
-                    showZForm_686149();
-                }, 10000);  // 10 seconds delay
-            }
-        }
+			function onloadActions_169968(){
+				constructDiv_169968();
+				
+			}
 
-        // Create the popup structure
-        function constructDiv_686149() {
-            var iframeDiv = document.createElement("div");
-            iframeDiv.setAttribute("id", "ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_686149");
-            iframeDiv.setAttribute("class", "zf_main_id_686149");
+			function constructDiv_169968(){
+				var iframeDiv = document.createElement("div");
+				iframeDiv.setAttribute('id','ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_169968');
+				iframeDiv.setAttribute('class','zf_main_id_169968');
 
-            var closeFormDiv = document.createElement("div");
-            closeFormDiv.setAttribute("id", "deleteform_686149");
-            closeFormDiv.setAttribute("class", "zf_lb_closeform_686149");
+				var closeFormDiv = document.createElement("div");
+				closeFormDiv.setAttribute('id','deleteform_169968');
+				closeFormDiv.setAttribute('class','zf_lb_closeform_169968');
+				
 
-            var containerDiv = document.createElement("div");
-            containerDiv.setAttribute("id", "containerDiv_686149");
-            containerDiv.setAttribute("class", "zf_lB_Container_686149 fadeIn");
-            containerDiv.appendChild(iframeDiv);
-            containerDiv.appendChild(closeFormDiv);
+				var containerDiv = document.createElement("div");
+				containerDiv.setAttribute('id','containerDiv_169968');
+				containerDiv.setAttribute('class','zf_lB_Container_169968 fadeIn');
+				containerDiv.appendChild(iframeDiv);
+				containerDiv.appendChild(closeFormDiv);
+				
+				var wrapperDiv = document.createElement("div");
+				wrapperDiv.setAttribute('class','zf_lB_Wrapper_169968');
+				wrapperDiv.appendChild(containerDiv);
 
-            var wrapperDiv = document.createElement("div");
-            wrapperDiv.setAttribute("class", "zf_lB_Wrapper_686149");
-            wrapperDiv.appendChild(containerDiv);
 
-            var dimmerDiv = document.createElement("div");
-            dimmerDiv.setAttribute("class", "zf_lB_Dimmer_686149");
-            dimmerDiv.setAttribute("elname", "popup_box");
+				var dimmerDiv = document.createElement("div");
+				dimmerDiv.setAttribute('class','zf_lB_Dimmer_169968');
+				dimmerDiv.setAttribute('elname','popup_box');
 
-            var mainDiv = document.createElement("div");
-            mainDiv.setAttribute("id", "formsLightBox_686149");
-            mainDiv.style.display = "none";
-            mainDiv.appendChild(wrapperDiv);
-            mainDiv.appendChild(dimmerDiv);
+				var mainDiv = document.createElement("div");
+				mainDiv.setAttribute('id','formsLightBox_169968');
+				mainDiv.style.display = "none";
+				mainDiv.appendChild(wrapperDiv);
+				mainDiv.appendChild(dimmerDiv);
 
-            document.body.appendChild(mainDiv);
-        }
+				document.body.appendChild(mainDiv);
 
-        // Show the form by setting the popup display to "block"
-        function showZForm_686149() {
-            var iframe = document.getElementById("ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_686149").getElementsByTagName("iframe")[0];
-            if (iframe == undefined || iframe.length == 0) {
-                loadZForm_686149();
-            }
-            document.getElementById("formsLightBox_686149").style.display = "block"; 
-            document.body.style.overflow = "hidden";  // Prevent background scrolling
-        }
+			}
 
-        // Load the form into the iframe
-        function loadZForm_686149() {
-            var iframe = document.getElementById("ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_686149").getElementsByTagName("iframe")[0];
-            if (iframe == undefined || iframe.length == 0) {
-                var f = document.createElement("iframe");
-                f.src = getsrcurlZForm_686149("https://forms.zohopublic.in/codingbhumi1/form/EmailSubscription/formperma/ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo");
+			function showZForm_169968(){
+				var iframe = document.getElementById("ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_169968").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					loadZForm_169968();
+					
+				} 
+				document.getElementById("formsLightBox_169968").style.display = "block"; 
+				document.body.style.overflow = "hidden";
+			}
 
-                f.style.border = "none";
-                f.style.minWidth = "100%";
-                f.style.overflow = "hidden";
-                var d = document.getElementById("ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_686149");
-                d.appendChild(f);
+			function loadZForm_169968() {
+				var iframe = document.getElementById("ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_169968").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					var f = document.createElement("iframe");
+					f.src = getsrcurlZForm_169968('https://forms.zohopublic.in/codingbhumi1/form/EmailSubscription/formperma/ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo');
+				    
+					f.style.border="none";
+					f.style.minWidth="100%";
+					f.style.overflow="hidden";
+					var d = document.getElementById("ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_169968");
+					d.appendChild(f);
 
-                var deleteForm = document.getElementById("deleteform_686149");
-                deleteForm.onclick = function deleteZForm_686149() {
-                    var divCont = document.getElementById("formsLightBox_686149");
-                    divCont.style.display = "none";
-                    document.body.style.overflow = "";  // Restore scrolling
+					var deleteForm = document.getElementById("deleteform_169968");
+					deleteForm.onclick = function deleteZForm_169968() {
+						var divCont = document.getElementById("formsLightBox_169968");
+						divCont.style.display="none";
+						document.body.style.overflow = "";
 
-                    var iframe = document.getElementById("ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_686149").getElementsByTagName("iframe")[0];
-                    iframe.remove();
-                };
+						var iframe = document.getElementById("ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_169968").getElementsByTagName("iframe")[0];
+						iframe.remove();
+					}
 
-                window.addEventListener("message", function() {
-                    var evntData = event.data;
-                    if (evntData && evntData.constructor == String) {
-                        var zf_ifrm_data = evntData.split("|");
-                        if (zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3) {
-                            var zf_perma = zf_ifrm_data[0];
-                            var zf_ifrm_ht_nw = (parseInt(zf_ifrm_data[1], 10) + 15) + "px";
-                            var iframe = document.getElementById("ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_686149").getElementsByTagName("iframe")[0];
-                            if ((iframe.src).indexOf("formperma") > 0 && (iframe.src).indexOf(zf_perma) > 0) {
-                                var prevIframeHeight = iframe.style.height;
+					
 
-                                var zf_tout = false;
-                                if (zf_ifrm_data.length == 3) {
-                                    iframe.scrollIntoView();
-                                    zf_tout = true;
-                                }
+					window.addEventListener('message', function (){
+						var evntData = event.data;
+						if( evntData && evntData.constructor == String ){
+							var zf_ifrm_data = evntData.split("|");
+							if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) {
+								var zf_perma = zf_ifrm_data[0];
+								var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+								var iframe = document.getElementById("ofi6wJ0rwy87y3Yya2hFdVhgjPKw22rCiha1JrXPoUo_169968").getElementsByTagName("iframe")[0];
+								if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+									var prevIframeHeight = iframe.style.height;
 
-                                if (prevIframeHeight != zf_ifrm_ht_nw) {
-                                    if (zf_tout) {
-                                        setTimeout(function() {
-                                            iframe.style.minHeight = zf_ifrm_ht_nw;
-                                            var containerDiv = document.getElementById("containerDiv_686149");
-                                            containerDiv.style.height = zf_ifrm_ht_nw;
-                                        }, 500);
-                                    } else {
-                                        iframe.style.minHeight = zf_ifrm_ht_nw;
-                                        var containerDiv = document.getElementById("containerDiv_686149");
-                                        containerDiv.style.height = zf_ifrm_ht_nw;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }, false);
-            }
-        }
+									var zf_tout = false;
+									if( zf_ifrm_data.length == 3 ) {
+									    iframe.scrollIntoView();
+									    zf_tout = true;
+									}
 
-        // Handle UTM parameters (if needed for your form URL)
-        function getsrcurlZForm_686149(zf_src) {
-            try {
-                if (typeof ZFAdvLead !== "undefined" && typeof zfutm_zfAdvLead !== "undefined") {
-                    for (var prmIdx = 0; prmIdx < ZFAdvLead.utmPNameArr.length; prmIdx++) {
-                        var utmPm = ZFAdvLead.utmPNameArr[prmIdx];
-                        var utmVal = zfutm_zfAdvLead.zfautm_gC_enc(ZFAdvLead.utmPNameArr[prmIdx]);
-                        if (typeof utmVal !== "undefined" && utmVal !== "") {
-                            if (zf_src.indexOf("?") > 0) {
-                                zf_src = zf_src + "&" + utmPm + "=" + utmVal;
-                            } else {
-                                zf_src = zf_src + "?" + utmPm + "=" + utmVal;
-                            }
-                        }
-                    }
-                }
+									if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+										if( zf_tout ) {
+											setTimeout(function(){
+										        iframe.style.minHeight = zf_ifrm_ht_nw;
+												var containerDiv = document.getElementById("containerDiv_169968");
+												containerDiv.style.height=zf_ifrm_ht_nw;
+										    },500);
+										} else {
+										    iframe.style.minHeight = zf_ifrm_ht_nw;
+											var containerDiv = document.getElementById("containerDiv_169968");
+											containerDiv.style.height=zf_ifrm_ht_nw;
+										}
+									}
+								}
+							}
+						}
 
-                if (typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined") {
-                    for (var prmIdx = 0; prmIdx < ZFLead.utmPNameArr.length; prmIdx++) {
-                        var utmPm = ZFLead.utmPNameArr[prmIdx];
-                        var utmVal = zfutm_zfLead.zfutm_gC_enc(ZFLead.utmPNameArr[prmIdx]);
-                        if (typeof utmVal !== "undefined" && utmVal !== "") {
-                            if (zf_src.indexOf("?") > 0) {
-                                zf_src = zf_src + "&" + utmPm + "=" + utmVal;
-                            } else {
-                                zf_src = zf_src + "?" + utmPm + "=" + utmVal;
-                            }
-                        }
-                    }
-                }
-            } catch (e) {}
-            return zf_src;
-        }
+					}, false);
+				}
+			}
 
-    } catch (e) {}
+			
+
+			function getsrcurlZForm_169968(zf_src) {
+				try {
+					
+					if ( typeof ZFAdvLead !== "undefined" && typeof zfutm_zfAdvLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+
+					if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+				}catch(e){}
+				return zf_src;
+			}
+			setTimeout(function (){
+		  		showZForm_169968();
+			}, 10*1000);
+			
+			
+	}catch(e){}
 })();
