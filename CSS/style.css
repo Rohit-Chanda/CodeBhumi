@@ -7,10 +7,7 @@ body {
 }
 
 
-/* hero section */
-/* #myCarousel {
-        --bs-carousel-transition-duration: 0.3s;
-      } */
+/* Carousel Item */
 .carousel-item {
   height: 86vh;
   min-height: 300px;
@@ -23,13 +20,15 @@ body {
   width: 100%;
 }
 
+/* Caption Styling */
 .carousel-caption {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 40%;
+  transform: translateY(-40%);
   text-align: left;
 }
 
+/* Overlay Effect */
 .carousel-overlay {
   position: absolute;
   top: 0;
@@ -42,6 +41,106 @@ body {
 
 .carousel-overlay.white {
   background: rgba(255, 255, 255, 0.5);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small screens (mobile devices) */
+@media (max-width: 575.98px) {
+  .carousel-indicators{
+    display: none;
+  }
+  
+  .carousel-item {
+    height: 60vh; /* Decrease the height on mobile */
+  }
+
+  .carousel-caption {
+    top: 30%; /* Lower the caption to better fit the smaller screen */
+    transform: translateY(-30%);
+    text-align: center; /* Center the text for mobile */
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem; /* Smaller font for mobile */
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+
+  .carousel-caption a {
+    font-size: 0.8rem; /* Adjust button size */
+  }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .carousel-item {
+    height: 70vh;
+  }
+
+  .carousel-caption {
+    top: 35%;
+    transform: translateY(-35%);
+    text-align: center; /* Center text for tablets */
+  }
+
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-caption a {
+    font-size: 0.9rem;
+  }
+}
+
+/* For large screens (desktops) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .carousel-item {
+    height: 80vh;
+  }
+
+  .carousel-caption {
+    top: 40%;
+    transform: translateY(-40%);
+    text-align: left;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.1rem;
+  }
+
+  .carousel-caption a {
+    font-size: 1rem;
+  }
+}
+
+/* For extra large screens (wider desktops) */
+@media (min-width: 992px) {
+  .carousel-item {
+    height: 86vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 3rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption a {
+    font-size: 1.1rem;
+  }
 }
 
 /* faculty section */
